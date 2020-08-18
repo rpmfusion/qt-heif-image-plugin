@@ -1,3 +1,5 @@
+%undefine __cmake_in_source_build
+
 Name:    qt-heif-image-plugin
 Version: 0.3.3
 Release: 3%{?dist}
@@ -10,7 +12,7 @@ Source0: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 # https://github.com/jakar/qt-heif-image-plugin/issues/17
 Patch0:  qt-heif-image-plugin-fix-libheif-1.7.0.patch
 
-BuildRequires: cmake
+BuildRequires: cmake3
 BuildRequires: gcc-c++
 BuildRequires: cmake(Qt5)
 BuildRequires: pkgconfig(libheif) >= 1.1
@@ -25,12 +27,12 @@ BuildRequires: qt5-rpm-macros
 
 
 %build
-%cmake .
-%make_build
+%cmake3
+%cmake3_build
 
 
 %install
-%make_install
+%cmake3_install
 
 
 %files
