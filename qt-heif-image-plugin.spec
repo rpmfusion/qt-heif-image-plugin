@@ -1,16 +1,13 @@
 %undefine __cmake_in_source_build
 
 Name:    qt-heif-image-plugin
-Version: 0.3.3
-Release: 8%{?dist}
+Version: 0.3.4
+Release: 1%{?dist}
 Summary: Qt plugin for HEIF images
 
 License: LGPLv3
 URL:     https://github.com/jakar/qt-heif-image-plugin
 Source0: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
-
-# https://github.com/jakar/qt-heif-image-plugin/issues/17
-Patch0:  qt-heif-image-plugin-fix-libheif-1.7.0.patch
 
 BuildRequires: cmake3
 BuildRequires: gcc-c++
@@ -42,6 +39,9 @@ BuildRequires: qt5-rpm-macros
 
 
 %changelog
+* Mon Oct 09 2023 Yaroslav Sidlovsky <zawertun@gmail.com> - 0.3.4-1
+- version 0.3.4
+
 * Wed Aug 02 2023 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0.3.3-8
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_39_Mass_Rebuild
 
