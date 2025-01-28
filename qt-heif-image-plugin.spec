@@ -2,7 +2,7 @@
 
 Name:    qt-heif-image-plugin
 Version: 0.3.4
-Release: 3%{?dist}
+Release: 4%{?dist}
 Summary: Qt plugin for HEIF images
 
 License: LGPLv3
@@ -39,6 +39,9 @@ BuildRequires: qt5-rpm-macros
 
 
 %changelog
+* Tue Jan 28 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0.3.4-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
+
 * Fri Aug 02 2024 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0.3.4-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_41_Mass_Rebuild
 
